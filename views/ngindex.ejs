@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<script src="/public/angular.js"></script>
+<script src="/public/angular-route.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="name">
+  <p>name: <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+  <h1>your name is {{text()}}</h1>
+</div>
+
+<div ng-controller="getServerData">
+	<button ng-click="clickFun()">get data</button>&nbsp;&nbsp;data:{{data}}
+	
+</div>
+<div ng-controller="OneController">
+	<button ng-click="b1()">view1</button>
+</div>
+<div ng-controller="TwoController">
+	<button ng-click="b2()">view2</button>
+</div>
+<div ng-controller="ThreeController">
+	<button ng-click="b3()">view3</button>
+</div>
+	<div ng-view></div>
+<div/>
+<hr/>database part
+<br/>
+<div ng-controller="connDBController">
+	<button ng-click="connButton()">连接数据库</button>
+</div>
+
+<script src="/public/controller/TestController.js" ></script>
+</body>
+</html> 

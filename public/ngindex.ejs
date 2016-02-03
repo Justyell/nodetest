@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<script src="/public/angular.js"></script>
+</head>
+<body>
+
+<div  ng-controller="name">
+  <p>name: <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+  <h1>your name is {{text()}}</h1>
+</div>
+
+<div ng-controller="getServerData">
+	<button ng-click="getdata()">get data</button>&nbsp;&nbsp;data:{{data}}
+
+</div>
+
+<script src="./controller/TestController.js" ></script>
+</body>
+</html> 
